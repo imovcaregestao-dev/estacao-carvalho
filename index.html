@@ -69,34 +69,19 @@ nav ul li:hover .dropdown{
 display:block;
 }
 
-.dropdown a{
-display:block;
-padding:8px 0;
-text-decoration:none;
-color:#333;
-}
-
-.dropdown a:hover{
-color:#d35400;
-}
-
-/* ===== LOGO FIXO CENTRAL ===== */
+/* ===== LOGO DESKTOP ===== */
 
 .logo{
 position:fixed;
-top:80px;
+top:90px;
 left:50%;
 transform:translateX(-50%);
 z-index:999;
 opacity:0.92;
-width:100%;
-display:flex;
-justify-content:center;
-pointer-events:none;
 }
 
 .logo img{
-width:340px;
+width:360px;
 max-width:90%;
 height:auto;
 display:block;
@@ -106,7 +91,7 @@ filter: drop-shadow(0 10px 25px rgba(0,0,0,0.25));
 /* ===== HERO ===== */
 
 .hero{
-margin-top:240px;
+margin-top:260px;
 height:75vh;
 background:url('destaque.jpg') center/cover no-repeat;
 display:flex;
@@ -228,7 +213,7 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* ===== RESPONSIVO ===== */
+/* ===== RESPONSIVO CORRETO ===== */
 
 @media(max-width:768px){
 
@@ -242,19 +227,26 @@ flex-direction:column;
 gap:15px;
 }
 
+/* LOGO vira normal no celular */
 .logo{
-top:70px;
+position:relative;
+top:0;
+left:0;
+transform:none;
+margin-top:100px;
+display:flex;
+justify-content:center;
 }
 
 .logo img{
-width:230px;
-max-width:85%;
+width:220px;
 }
 
+/* HERO ajustado */
 .hero{
-margin-top:210px;
+margin-top:40px;
 height:auto;
-padding:80px 20px 60px 20px;
+padding:80px 20px;
 }
 
 .hero h1{
@@ -293,7 +285,7 @@ width:90%;
 <li>
 <a href="#">Sobre</a>
 <div class="dropdown">
-<p>Há mais de 16 anos oferecendo qualidade e sabor para eventos e confraternizações.</p>
+<p>Há mais de 16 anos oferecendo qualidade e sabor para eventos.</p>
 </div>
 </li>
 
