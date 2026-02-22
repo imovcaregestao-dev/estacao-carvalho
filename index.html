@@ -16,7 +16,7 @@ font-family:Arial, Helvetica, sans-serif;
 
 body{
 overflow-x:hidden;
-background:#f5f5f5;
+background:#f2f2f2;
 }
 
 /* ===== HEADER ===== */
@@ -30,30 +30,10 @@ background:#ffffff;
 display:flex;
 justify-content:flex-start;
 align-items:center;
-padding:25px 40px;
+padding:20px 40px;
 z-index:1000;
 box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
-
-/* ===== LOGO FIXO AJUSTADO ===== */
-
-.logo{
-position:fixed;
-top:50px; /* desce mais */
-left:50%;
-transform:translateX(-50%);
-z-index:999;
-opacity:0.9;
-}
-
-.logo img{
-max-width:270px; /* aumentado */
-height:auto;
-display:block;
-filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
-}
-
-/* ===== MENU ===== */
 
 nav ul{
 display:flex;
@@ -71,7 +51,7 @@ color:#333;
 font-weight:bold;
 }
 
-/* DROPDOWN */
+/* ===== DROPDOWN ===== */
 
 .dropdown{
 display:none;
@@ -100,10 +80,33 @@ color:#333;
 color:#d35400;
 }
 
+/* ===== LOGO FIXO CENTRAL ===== */
+
+.logo{
+position:fixed;
+top:80px;
+left:50%;
+transform:translateX(-50%);
+z-index:999;
+opacity:0.92;
+width:100%;
+display:flex;
+justify-content:center;
+pointer-events:none;
+}
+
+.logo img{
+width:340px;
+max-width:90%;
+height:auto;
+display:block;
+filter: drop-shadow(0 10px 25px rgba(0,0,0,0.25));
+}
+
 /* ===== HERO ===== */
 
 .hero{
-margin-top:220px; /* ajustado por causa do logo maior */
+margin-top:240px;
 height:75vh;
 background:url('destaque.jpg') center/cover no-repeat;
 display:flex;
@@ -118,7 +121,7 @@ position:relative;
 content:"";
 position:absolute;
 inset:0;
-background:rgba(0,0,0,0.4);
+background:rgba(0,0,0,0.45);
 }
 
 .hero h1{
@@ -186,7 +189,7 @@ background:#ffffff;
 }
 
 .chef img{
-max-width:250px;
+max-width:260px;
 border-radius:12px;
 box-shadow:0 5px 15px rgba(0,0,0,0.25);
 margin-bottom:20px;
@@ -231,7 +234,7 @@ font-weight:bold;
 
 header{
 flex-direction:column;
-padding:20px;
+padding:15px;
 }
 
 nav ul{
@@ -240,15 +243,16 @@ gap:15px;
 }
 
 .logo{
-top:35px;
+top:70px;
 }
 
 .logo img{
-max-width:190px; /* proporcional no celular */
+width:230px;
+max-width:85%;
 }
 
 .hero{
-margin-top:200px;
+margin-top:210px;
 height:auto;
 padding:80px 20px 60px 20px;
 }
@@ -289,7 +293,7 @@ width:90%;
 <li>
 <a href="#">Sobre</a>
 <div class="dropdown">
-<p>Há mais de 16 anos oferecendo qualidade, sabor e excelência para seus eventos.</p>
+<p>Há mais de 16 anos oferecendo qualidade e sabor para eventos e confraternizações.</p>
 </div>
 </li>
 
@@ -348,7 +352,7 @@ width:90%;
 <section class="chef">
 <h2>Nosso Chef</h2>
 <img src="chef.jpg">
-<p>Especialista em culinária artesanal, utilizando ingredientes frescos e preparo cuidadoso para elevar seu paladar.</p>
+<p>Especialista em culinária artesanal, utilizando ingredientes frescos e preparo cuidadoso.</p>
 </section>
 
 <section class="mapa">
